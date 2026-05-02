@@ -4,8 +4,8 @@
   "description": "Vehicle Maintenance Scheduler with Notification System",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node --env-file=.env server.js",
+    "inbox": "node --env-file=.env notification_app_be/priorityInbox.js"
   },
   "dependencies": {
     "axios": "^1.6.7",
